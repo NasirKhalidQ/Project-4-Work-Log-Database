@@ -75,7 +75,7 @@ def add_entry():
       task_title=input_title,
       time_spent=input_time_spent,
       notes=input_notes,
-      task_date=input_date)
+      task_date=datetime.datetime.strptime(input_date, '%m/%d/%Y'))
 
     print("Saved successfully!")
 
@@ -184,4 +184,4 @@ menu = OrderedDict([
 
 if __name__ == '__main__':
     initialize()
-    menu_loop()
+menu_loop()
