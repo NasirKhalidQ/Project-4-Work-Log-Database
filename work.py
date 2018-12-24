@@ -53,8 +53,8 @@ def add_entry():
 
     while True:
         try:
-            input_time_spent = input('Enter the time spent on the task in '
-                                     'minutes: ')
+            input_time_spent = int(input('Enter the time spent on the task in '
+                                         'minutes: '))
             break
         except ValueError:
             print('Please enter a valid integer')
